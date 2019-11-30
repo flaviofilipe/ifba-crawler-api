@@ -12,7 +12,7 @@ def get_dat_publish(article):
 def get_articles(start=1):
     b_start = 0 if start == 1 else 30*(start-1)
     page_url = '{}?b_start:int={}'.format(url, b_start)
-    page = requests.get(page_url)
+    page = requests.get(page_url, verify=False)
 
     # Criar o objeto BeautifulSoup
     soup = BeautifulSoup(page.text, 'html.parser').find_all('article', class_='entry')

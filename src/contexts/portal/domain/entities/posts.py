@@ -1,5 +1,6 @@
 from datetime import date
 
+
 class Posts:
     def __init__(self, title: str, link: str, date: date) -> None:
         print(date.year)

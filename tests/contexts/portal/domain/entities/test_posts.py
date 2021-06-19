@@ -3,7 +3,7 @@ import pytest
 from datetime import date
 from faker import Faker
 from faker.providers import internet
-from src.contexts.portal.domain.entities.notices import Notices
+from src.contexts.portal.domain.entities.posts import Posts
 
 faker = Faker()
 now = date.today()
@@ -12,7 +12,7 @@ link = internet.Provider.safe_domain_name
 
 @pytest.fixture
 def new_notice():
-    return Notices(title, link,  now)
+    return Posts(title, link,  now)
 
 def test_create_notice(new_notice):
     assert new_notice.title == title

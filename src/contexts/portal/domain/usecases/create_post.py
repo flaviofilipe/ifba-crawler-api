@@ -5,5 +5,4 @@ import typing
 class NewsTypeParams(typing.TypedDict):
     title: str
     link: str
-    date: date
-
+    created_at: date

@@ -1,6 +1,6 @@
 from src.contexts.shared.domain.usecases.usecase import UseCase
-from src.contexts.portal.domain.entities.post import Post
-from src.contexts.portal.domain.usecases.create_post import NewsTypeParams
+from src.contexts.posts.domain.entities.post import Post
+from src.contexts.posts.domain.usecases.create_post import NewsTypeParams
 from ..ports.db.posts_repository import PostRepository
 
 

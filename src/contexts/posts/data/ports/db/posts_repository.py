@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
-from src.contexts.portal.domain.usecases.create_post import NewsTypeParams
-from src.contexts.portal.domain.entities.post import Post
+from src.contexts.posts.domain.usecases.create_post import NewsTypeParams
+from src.contexts.posts.domain.entities.post import Post
 
 
 class PostRepository(ABC):

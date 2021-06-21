@@ -6,7 +6,7 @@ from src.contexts.integration.ifba.data.ports.client.http_port import HttpPort
 
 class HttpAdapter(HttpPort):
     def get_posts(self, page_url: str, verify: bool):
-        page = requests.get(page_url, verify)
+        page = requests.get(page_url, verify=verify)
 
         soup = BeautifulSoup(page.text, 'html.parser').find_all('article', class_='entry')
         posts = []

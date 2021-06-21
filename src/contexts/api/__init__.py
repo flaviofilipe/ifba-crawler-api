@@ -1,15 +1,15 @@
 from flask import Flask
-from flask_cors import CORS, cross_origin
+from flask_cors import CORS
 
 
 def create_app():
     app = Flask(__name__)
-    app.config.from_object('app.config')
+    app.config.from_object('src.contexts.api.config')
     app.config['CACHE_TYPE'] = 'simple'
 
     cors = CORS(app)
 
-    from app.views import bp_views
+    from src.contexts.api.views import bp_views
     app.register_blueprint(bp_views)
 
     return app

@@ -3,4 +3,7 @@ beautifulsoup4==4.8.0
 Flask==1.1.1
 gunicorn
 flask_cors
-python-dotenv
+python-dotenv~=0.17.1
+
+pytest~=6.2.4
+Faker~=8.8.1

@@ -6,5 +6,5 @@ class GetPostsController(Controller):
     def __init__(self, create_post_usecase: UseCase):
         self.create_post_usecase = create_post_usecase
 
-    def handler(self, **kwargs):
-        return self.create_post_usecase.execute()
+    def handler(self, page: int = 1):
+        return self.create_post_usecase.execute(page)

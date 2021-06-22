@@ -33,5 +33,5 @@ pipenv shell
 # Endpoint
 |Método| url | Descrição | Parâmetros
 |--|--|--|--
-| GET  | /noticias | Lista as noticias | b_start: Início da lista
+| GET  | / | Lista as noticias | b_start: Início da lista
 

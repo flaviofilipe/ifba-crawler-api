@@ -2,9 +2,9 @@ from datetime import date
 from faker import Faker
 from faker.providers import internet
 
-from src.contexts.posts.data.ports.db.posts_repository import PostRepository
-from src.contexts.posts.domain.entities.post import Post
-from src.contexts.posts.domain.usecases.create_post import NewsTypeParams
+from src.contexts.posts.data.ports.db_port import PostRepository
+from src.contexts.posts.domain.entities import Post
+from src.contexts.posts.domain.usecases import NewsTypeParams
 
 faker = Faker()
 providers = internet.Provider(faker)

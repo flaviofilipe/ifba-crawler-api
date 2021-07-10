@@ -1,7 +1,7 @@
 from datetime import date
 from faker import Faker
 from faker.providers import internet
-from src.contexts.posts.domain.entities.post import Post
+from src.contexts.posts.domain.entities import Post
 
 faker = Faker()
 

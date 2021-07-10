@@ -1,5 +1,5 @@
-from src.contexts.shared.presentation.protocols.controller import Controller
-from src.contexts.shared.domain.usecases.usecase import UseCase
+from src.contexts.shared.presentation.controller import Controller
+from src.contexts.shared.domain.usecase import UseCase
 
 
 class GetPostsController(Controller):

@@ -1,4 +1,4 @@
-from src.contexts.shared.domain.usecases.usecase import UseCase
+from src.contexts.shared.domain.usecase import UseCase
 
 
 class GetPostsUseCaseSpy(UseCase):

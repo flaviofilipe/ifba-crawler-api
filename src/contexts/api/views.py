@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, request
-from src.contexts.integration.ifba.main.factories.controllers.get_posts_controller_factory import \
+from src.contexts.integration.ifba.main.factories.controllers import \
     make_get_posts_controller
 
 bp_views = Blueprint('views', __name__)

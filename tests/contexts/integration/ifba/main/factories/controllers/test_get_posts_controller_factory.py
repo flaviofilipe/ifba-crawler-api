@@ -1,4 +1,4 @@
-from src.contexts.integration.ifba.main.factories.controllers.get_posts_controller_factory import \
+from src.contexts.integration.ifba.main.factories.controllers import \
     make_get_posts_controller
 
 

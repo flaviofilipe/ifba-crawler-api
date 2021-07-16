@@ -1,5 +1,5 @@
 from src.contexts.integration.ifba.data.services.portal_integration_service import get_posts
-from tests.contexts.portal.mocks.ports import HttpPortSpy
+from tests.contexts.posts.mocks.ports import HttpPortSpy
 
 
 def test_get_array_posts():

@@ -1,6 +1,8 @@
-
+import json
 import pytest
-from datetime import date
+from datetime import date, datetime
+
+from bson import json_util
 from faker import Faker
 from faker.providers import internet
 from src.contexts.posts.domain.entities import Post
@@ -29,3 +31,7 @@ def test_get_date(new_post):
 
 def test_get_link(new_post):
     assert new_post.link == link
+
+
+def test_get_dict(new_post):
+    assert isinstance(new_post.__dict__(), dict)

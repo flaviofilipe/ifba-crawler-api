@@ -1,8 +1,8 @@
 import pytest
 from src.contexts.posts.data.usecases import CreatePostUsecase
-from tests.contexts.posts.mocks.repositories import PostRepositorySpy, make_params
+from tests.contexts.posts.mocks.repositories import PostRepositorySpy, mock_params
 
-params = make_params()
+params = mock_params()
 
 
 @pytest.fixture
